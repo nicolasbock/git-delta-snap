@@ -13,6 +13,11 @@ description: |
   Configure your git repository with
 
     git config core.pager git-delta-snap.delta
+    git config interactive.diffFilter "git-delta-snap.delta --color-only"
+    git config delta.navigate true
+    git config delta.light false
+    git config merge.conflictstyle diff3
+    git config diff.colorMoved default
 
 website: https://dandavison.github.io/delta/introduction.html
 license: MIT
