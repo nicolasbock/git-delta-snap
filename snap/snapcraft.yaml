@@ -1,6 +1,6 @@
 name: git-delta-snap
 base: core20
-version: '0.16.5'
+adopt-info: delta
 summary: A syntax-highlighting pager for git, diff, and grep output
 description: |
   Code evolves, and we all spend time studying diffs. Delta aims to make this
@@ -21,3 +21,6 @@ parts:
   delta:
     plugin: rust
     source: https://github.com/dandavison/delta.git
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags)"
