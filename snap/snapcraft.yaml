@@ -7,6 +7,13 @@ description: |
   both efficient and enjoyable: it allows you to make extensive changes to the
   layout and styling of diffs, as well as allowing you to stay arbitrarily
   close to the default git/diff output.
+
+  **Configuration**
+
+  Configure your git repository with
+
+    git config core.pager git-delta-snap.delta
+
 website: https://dandavison.github.io/delta/introduction.html
 license: MIT
 
