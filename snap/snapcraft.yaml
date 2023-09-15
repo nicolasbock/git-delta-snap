@@ -19,6 +19,10 @@ description: |
     git config merge.conflictstyle diff3
     git config diff.colorMoved default
 
+  These settings can be applied globally by adding `--global`, i.e.
+
+    git config --global core.pager git-delta-snap.delta
+
 website: https://dandavison.github.io/delta/introduction.html
 license: MIT
 
